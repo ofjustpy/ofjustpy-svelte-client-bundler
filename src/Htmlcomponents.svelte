@@ -4,14 +4,12 @@
   props['jp_props'] = jp_props;
   
   import Dummy from "./Dummy.svelte";
-  import Chart from "./Chart.svelte";
   import Switch from './Switch.svelte';
   import Collapsible from './Collapsible.svelte';
   const selfClosingTags = ['hr', 'input', 'area', 'base', 'br', 'col', 'embed', 'img', 'link', 'meta', 'param', 'source', 'track', 'wbr'];
 
   const components = {
     'Dummy': Dummy,
-    'ChartJS': Chart,
     'Switch': Switch,
     'Dummy': Dummy,
     'Collapsible': Collapsible
@@ -20,7 +18,7 @@
   function eventHandlerWrapper(eventType) {
     return function (event) {
       if (jp_props.events.includes(eventType)) {
-        eventHandler(props, event, false);
+        eventHandler_CSR(props, event, false);
       }
     };
   }

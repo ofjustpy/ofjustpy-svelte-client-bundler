@@ -1,11 +1,10 @@
 import TailwindCss from './TailwindCSS.svelte';
 import App from './App.svelte';
 import Htmlcomponent from './Htmlcomponents.svelte';
-import Chart from "./Chart.svelte";
 import Switch from './Switch.svelte';
 import jsonpatch from 'fast-json-patch';
 import { justpyComponents, setJustpyComponents } from "./store.js";
-import { Chart as ChartJSChart } from 'chart.js';
+
 // var justpyComponents = [{
 //     "attrs": {},
 //     "id": null,
@@ -83,4 +82,4 @@ import { Chart as ChartJSChart } from 'chart.js';
 // });
 
 // export default app;
-export {App, Chart, justpyComponents, setJustpyComponents, ChartJSChart};
+export {App, justpyComponents, setJustpyComponents};

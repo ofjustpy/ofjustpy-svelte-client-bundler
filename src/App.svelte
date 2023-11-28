@@ -8,7 +8,6 @@
 
   import Htmlcomponent from './Htmlcomponents.svelte';
   import Dummy from "./Dummy.svelte";
-  import Chart from "./Chart.svelte";
   import Switch from './Switch.svelte';
   import Collapsible from './Collapsible.svelte';
   
@@ -20,7 +19,6 @@
   let selected_component = Htmlcomponent;
   let components = {'html_component': Htmlcomponent,
                      'Dummy': Dummy,
-                     'ChartJS': Chart,
                      'Switch': Switch,
 		     'Collapsible': Collapsible
                     
