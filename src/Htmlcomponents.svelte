@@ -6,13 +6,15 @@
   import Dummy from "./Dummy.svelte";
   import Switch from './Switch.svelte';
   import Collapsible from './Collapsible.svelte';
+  import { Alert } from 'flowbite-svelte';
   const selfClosingTags = ['hr', 'input', 'area', 'base', 'br', 'col', 'embed', 'img', 'link', 'meta', 'param', 'source', 'track', 'wbr'];
 
   const components = {
     'Dummy': Dummy,
     'Switch': Switch,
     'Dummy': Dummy,
-    'Collapsible': Collapsible
+    'Collapsible': Collapsible,
+    'FB-Alert': Alert
   };
 
   function eventHandlerWrapper(eventType) {
